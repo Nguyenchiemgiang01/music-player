@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+
+    <link rel="shortcut icon" href="./assets/img/iconMusic.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+        <div class="player ">
+            <div class="dashboard">
+                
+                <!-- header -->
+                <header>
+                    <h4>Music zone</h4>
+                    <h2>Music name</h2>
+                </header>
+
+                <!-- CD -->
+                <div class="cd">
+                    <div class="cd-thumb" style="background-image: url('https://www.udiscovermusic.com/wp-content/uploads/2019/09/Best-Music-Podcasts-featured-image-1000.jpg')">
+                    </div>
+                </div>
+
+                <!-- control -->
+                <div class="control">
+
+                    <div class="btn btn-repeat">
+                        <i class="fas  fa-redo"> </i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-random ">
+                        <i class="fas fa-random "></i>
+                    </div>
+
+                </div>
+
+                <!-- time bar  -->
+                <div class="time-music">
+                   <div class="time-music-start">0:00</div>
+                   <div class="progress-bar">
+                     <input  class="progress"  type="range"  value="0" step="1" min="0" max="100">
+                   </div> 
+                   <div class="time-music-end">0:00</div>
+                </div>
+
+                <audio id="audio" src=""></audio>
+
+            </div>
+
+            <!-- play list -->
+            <div class="play-list">
+
+            </div>
+
+           
+            <script src="./assets/js/app.js"></script>
+
+        </div>
+</body>
+</html>
